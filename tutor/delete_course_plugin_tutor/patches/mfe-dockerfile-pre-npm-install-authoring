@@ -1,0 +1,4 @@
+COPY --from=delete-course-plugin-frontend / /openedx/delete-course-plugin-frontend
+WORKDIR /openedx/delete-course-plugin-frontend
+RUN npm install --ignore-scripts && npm run build:package && npm pack
+WORKDIR /openedx/app

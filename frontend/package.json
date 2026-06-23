@@ -1,0 +1,25 @@
+{
+  "name": "@openedx/frontend-component-delete-course",
+  "version": "1.0.0",
+  "description": "Delete course button for Open edX Authoring MFE",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:package": "esbuild src/index.js --bundle --format=esm --external:react --external:react-dom --external:@openedx/paragon --external:@edx/frontend-platform --external:@edx/frontend-platform/auth --external:@edx/frontend-platform/i18n --outfile=dist/index.js",
+    "build": "npm run build:package"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11"
+  },
+  "peerDependencies": {
+    "@edx/frontend-platform": "^7.0.0 || ^8.0.0",
+    "@openedx/paragon": "^22.0.0 || ^23.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "license": "AGPL-3.0-only"
+}

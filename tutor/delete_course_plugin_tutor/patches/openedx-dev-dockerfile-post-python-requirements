@@ -1,0 +1,4 @@
+COPY --from=delete-course-plugin-backend / /openedx/delete-course-plugin-backend
+USER root
+RUN pip install -e /openedx/delete-course-plugin-backend
+USER app
