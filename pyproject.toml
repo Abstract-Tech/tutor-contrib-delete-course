@@ -16,8 +16,8 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-  "tutor>=21.0.0,<22.0.0",
-  "tutor-mfe>=21.0.0,<22.0.0",
+  "tutor>=21.0.0,<23.0.0",
+  "tutor-mfe>=21.0.0,<23.0.0",
 ]
 
 [tool.hatch.version]
